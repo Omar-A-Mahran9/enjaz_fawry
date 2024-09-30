@@ -249,6 +249,12 @@
     // Services
     Route::resource('service', 'Dashboard\ServiceController')->except('show');
     Route::resource('sub_service', 'Dashboard\SubServiceController')->except('show');
+    Route::get('contact_order', 'Api\RequstController@getAll')->name("contact_order.All");
+    Route::get('contact_order/show/{id}', 'Api\RequstController@show')->name("contact_order.show");
+    Route::DELETE('contact_order/delete/{id}', 'Api\RequstController@destroy')->name('contact_order.destroy');
+ 
+
+    Route::get('contact_order/{id}', 'Api\RequstController@service')->name("contact_order.service");
 
     // Clients
     Route::get('clients', 'Dashboard\UsersController@indexClient')->name('clients.index');

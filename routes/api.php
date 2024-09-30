@@ -81,6 +81,7 @@ Route::get('ta3med_payment_callback',  'Api\OrderTa3medController@ta3med_payment
 Route::get('guarante_payment_callback',  'Api\OrderGuaranteController@guarante_payment_callback');
 Route::get('mo3amla_payment_callback', 'Api\OrderMo3amlaController@mo3amla_payment_callback');
 
+Route::post('contact_order', 'Api\RequstController@storeContact');
 
 
 // Vendor Orders

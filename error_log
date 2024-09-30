@@ -1,0 +1,1 @@
+[24-Jul-2024 11:47:35 Asia/Riyadh] PHP Fatal error:  Cannot redeclare clnt() (previously declared in /home/enjfawry/public_html/config/library.php:3) in /home/enjfawry/public_html/config/library.php on line 2

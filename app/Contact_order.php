@@ -9,7 +9,7 @@ class Contact_order extends Model
    
     protected $table = 'contact_orders';
     public $timestamps = true;
-    protected $fillable = array('name', 'email', 'phone', 'service_id');
+    protected $fillable = array('name', 'email', 'phone', 'service_id',"service");
 
     public function serviceOrder(){
  

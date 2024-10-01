@@ -53,7 +53,7 @@
                             <td>{{ $message->name }}</td>
                             <td>{{ $message->phone }}</td>
                             <td>{{ $message->email }}</td>
-                            <td>{{ $message->serviceOrder->name ?? null }}</td>
+                            <td>{{ $message->service ?? null }}</td>
                             <td>
                                 @if ($message->status == -1)
                                     {{ 'لم تشاهد بعد' }}

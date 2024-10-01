@@ -18,8 +18,9 @@ class CreateContactOrdersTable extends Migration
             $table->string('name');
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
-            $table->unsignedInteger('service_id'); // Ensure this is unsigned
-            $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
+            $table->string('service')->nullable();
+            $table->unsignedInteger('service_id')->nullable(); // Ensure this is unsigned
+            $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade')->nullable();
             $table->integer('user_id')->nullable();
             $table->integer('status')->default('-1');
             $table->timestamps();

@@ -18,7 +18,7 @@ class RequstController extends Controller
             'name' => ['required'],
             'mobile'   => ['required'],
             'email' => ['required'],
-            'service_id' => ['required'],
+            'service' => ['required'],
         ]); 
         $contact = new Contact_order();
 
@@ -30,6 +30,7 @@ class RequstController extends Controller
         $contact->name = $r->name;
         $contact->email = $r->email;
         $contact->phone = $r->mobile;
+        $contact->service = $r->service;
         $contact->service_id = $r->service_id;
 
 

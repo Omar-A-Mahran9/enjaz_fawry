@@ -79,7 +79,7 @@
                             <div class="form-group m-form__group row">
                                 <label class="col-xl-3 col-lg-3 col-form-label">الخدمة:</label>
                                 <div class="col-xl-9 col-lg-9">
-                                    <textarea class="form-control m-input" disabled>{{ $service->name }}</textarea>
+                                    <textarea class="form-control m-input" disabled>{{ $message->service }}</textarea>
                                 </div>
                             </div>
 
